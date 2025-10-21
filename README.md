@@ -26,7 +26,7 @@ El Backend de Registro de Personas es una aplicación Spring Boot diseñada para
 ### Pasos para ejecutar la aplicación
 1. Clonar el repositorio:
    ```
-   git clone <repository-url>
+   git clone https://github.com/hirosh1t/person-registry-backend.git
    cd person-registry-backend
    ```
 
@@ -46,7 +46,7 @@ El Backend de Registro de Personas es una aplicación Spring Boot diseñada para
    ```
 
 ### Inicialización de la base de datos
-La aplicación está configurada para usar H2 como base de datos en memoria. Puedes precargar datos modificando el archivo `src/main/resources/data.sql`.
+La aplicación está configurada para usar H2 como base de datos en memoria. Puedes precargar datos modificando el archivo `src/main/resources/schema.sql`.
 
 ## Documentación de la API (OpenAPI / Swagger)
 
@@ -66,6 +66,3 @@ Se incluyen pruebas unitarias en el proyecto para asegurar la funcionalidad del 
 ```
 mvn test
 ```
-
-## Licencia
-Este proyecto está bajo la licencia MIT. Verifica el archivo LICENSE para más detalles.
