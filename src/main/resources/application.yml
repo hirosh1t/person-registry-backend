@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework: INFO
+    com.example.registry: DEBUG
+
+springdoc:
+  swagger-ui:
+    # ruta accesible: /swagger-ui.html o /swagger-ui/index.html
+    path: /swagger-ui.html
